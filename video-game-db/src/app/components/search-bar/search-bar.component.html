@@ -1,0 +1,21 @@
+<div class="search-container">
+  <!-- Passing the form as an argument to the onSubmit method -->
+  <form
+    action=""
+    class="search-form"
+    #form="ngForm"
+    (ngSubmit)="onSubmit(form)"
+  >
+    <!-- Clicking on this will redirect to the homepage, this is why we use '/' here -->
+    <span class="logo" routerLink="/">VGDB</span>
+    <!-- This will be used for searching -->
+    <input
+      class="search-input"
+      name="search"
+      ngModel
+      placeholder="Search 500,000+ games"
+    />
+    <!-- This button will submit our form. That is the input the user is searching for -->
+    <button class="search-button">Search</button>
+  </form>
+</div>

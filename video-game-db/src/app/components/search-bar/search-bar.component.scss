@@ -1,0 +1,61 @@
+// This will be the main selector of our component
+.search {
+  // First the search container, this holds the input and button
+  &-container {
+    width: 100%;
+    height: 60px;
+    background-color: #323a45;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    // Will be positioned on the top of the screen always
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 4;
+  }
+
+  &-form {
+    width: 100%;
+    //   This is the max for large screens
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  &-input {
+    margin-left: 10px;
+    padding: 10px;
+    width: 300px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    outline: none;
+    border: none;
+  }
+
+  &-button {
+    border: none;
+    outline: none;
+    background: #3f51b5;
+    padding: 10px;
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: #fff;
+
+    // Adding some hover effects
+    &:hover {
+      // This will be the color when hovering
+      color: #3f51b5;
+      background-color: #fff;
+      border: 1px solid #3f51b5;
+    }
+  }
+}
+
+.logo {
+  margin-left: 10px;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+}
